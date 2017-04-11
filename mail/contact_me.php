@@ -25,7 +25,7 @@ if (isset($_POST['name']) &&
    // $to, $from, $replyto are set in address.php config file for exclusion from the Github repo
    include ("address.php");
    $email_subject = "CHAS Registration for $name";
-   $email_body = "Registration for Cultural Heritage at Scale: A Semantic Web Symposium, June 2-3, 2016\n\nName: $name\nEmail: $email\nPhone: $phone\nInstitution: $institution\nSpecial Needs: ";
+   $email_body = "Registration for Cultural Heritage at Scale: Crowdsourcing with a Human Face, June 2, 2017\n\nName: $name\nEmail: $email\nPhone: $phone\nInstitution: $institution\nSpecial Needs: ";
    if (!empty($special_needs)) $email_body .= $special_needs;
    else $email_body .= "None";
    $headers = "From: $from\n";
